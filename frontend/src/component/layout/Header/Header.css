@@ -1,0 +1,50 @@
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+.nav-logo {
+  width: 20%;
+  transition: all 0.5s;
+}
+
+.nav-logo:hover {
+  filter: drop-shadow(0 0 10px tomato);
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  ul.Navbar {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    align-items: center;
+    width: 50%;
+    margin: 20px auto;
+    justify-items: center;
+    list-style: none;
+  }
+  
+}
+
+@media (min-width: 254px) and (max-width: 767px) {
+
+  ul.Navbar {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    margin: 30px 0;
+}
+ul.Navbar li {
+  padding: 0px 3px;
+}
+}
