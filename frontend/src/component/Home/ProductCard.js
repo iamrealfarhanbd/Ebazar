@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
       <div className="course-block col-lg-4 col-md-6 col-sm-12" >
               <div className="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div className="image">
-                  <a to={`/product/${product._id}`}><img src={product.images[0].url} alt={product.name} /></a>
+                  <Link to={`/product/${product._id}`}><img src={product.images[0].url} alt={product.name} /></Link>
                 </div>
                 <div className="lower-content">
                   <h4><Link to={`/product/${product._id}`}>{product.name}</Link></h4>
@@ -44,17 +44,4 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
-    // <Link className="productCard" to={`/product/${product._id}`}>
-    //   <img src={product.images[0].url} alt={product.name} />
-    //   <p>{product.name}</p>
-    //   <div>
-    //     <Rating {...options} />{" "}
-    //     <span className="productCardSpan">
-    //       {" "}
-    //       ({product.numOfReviews} Reviews)
-    //     </span>
-    //   </div>
-    //   <span>{`Tk. ${product.price}`}</span>
-    // </Link>
-   
-      {/* Course Column */}
+ 
