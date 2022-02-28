@@ -1,7 +1,7 @@
 import React from "react";
 // import { ReactNavbar } from "overlay-navbar";
 import logo from "../../../images/logo.png";
-import {FaSearch,RiLoginBoxFill} from 'react-icons/all'
+import {FaSearch} from 'react-icons/all'
 import { Link } from 'react-router-dom'
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
