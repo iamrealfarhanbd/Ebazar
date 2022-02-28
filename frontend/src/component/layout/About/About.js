@@ -8,14 +8,14 @@ const About = () => {
     window.location = "https://www.instagram.com/iamrealfarhanbd/";
   };
   return (
-    <div className="aboutSection">
+    <div className="aboutSection container">
       <div></div>
       <div className="aboutSectionGradient"></div>
       <div className="aboutSectionContainer">
         <Typography component="h1">About Us</Typography>
 
         <div>
-          <div>
+          <div className="col-md-6">
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
               src="https://res.cloudinary.com/ddsstur6v/image/upload/v1644755549/images/farhan_vob815.jpg"
@@ -27,7 +27,7 @@ const About = () => {
             </Button>
 
           </div>
-          <div className="aboutSectionContainer2">
+          <div className="aboutSectionContainer2 col-md-6">
           <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
               src="https://res.cloudinary.com/ddsstur6v/image/upload/v1644913930/images/WhatsApp_Image_2022-02-13_at_10.14.01_PM_cxm6ls.jpg"

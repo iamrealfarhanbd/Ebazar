@@ -28,7 +28,7 @@
   padding: 0;
 }
 
-.page-item {
+.paginationitem {
   background-color: rgb(255, 255, 255);
   list-style: none;
   border: 1px solid rgba(0, 0, 0, 0.178);
@@ -36,45 +36,71 @@
   transition: all 0.3s;
   cursor: pointer;
 }
-.page-item:first-child {
+.paginationitem:first-child {
   border-radius: 5px 0 0 5px;
 }
 
-.page-item:last-child {
+.paginationitem:last-child {
   border-radius: 0 5px 5px 0;
 }
-.page-link {
+.pagination-link {
   text-decoration: none;
   font: 300 0.7vmax "Roboto";
   color: rgb(80, 80, 80);
   transition: all 0.3s;
 }
 
-.page-item:hover {
+.paginationitem:hover {
   background-color: rgb(230, 230, 230);
 }
 
-.page-item:hover .page-link {
+.paginationitem:hover .pagination-link {
   color: rgb(0, 0, 0);
 }
 
-.pageItemActive {
+.paginationitemActive {
   background-color: tomato;
 }
 
 .pageLinkActive {
   color: white;
 }
-
+/* .mydiv {
+  display: flex;
+  justify-content: space-evenly;
+} */
 .filterBox {
-  width: 10vmax;
-  position: absolute;
+  width: 30%;
+  /* position: absolute; */
+  display: flex;
   top: 10vmax;
-  left: 4vmax;
+  left: 2vmax;
+  background: white;
+  padding: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
 }
+.filterBox p,.filterBox legend{
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.4em;
+  font-size: 20px;
+  font-family: 'Noto Sans TC', sans-serif;
 
+}
+.filterBox li {
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.4em;
+  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
 .categoryBox {
-  padding: 0%;
+  padding: 10px;
+display: flex;
+
 }
 
 .category-link {
@@ -90,20 +116,94 @@
 }
 
 .filterBox > fieldset {
-  border: 1px solid rgba(0, 0, 0, 0.329);
+  border: 2px solid #ffe00c;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  .filterBox {
-    width: 20vmax;
-    position: static;
-    margin: auto;
-  }
 
-  .page-link {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pagination-link {
     font: 300 1.7vmax "Roboto";
   }
   .category-link {
     font: 400 1.8vmax "Roboto";
   }
+
+ 
+.productsHeading {
+  margin: 2vmax auto;
+  width: 31vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 5.5vmax "Roboto";
+  text-align: center;
+}
+.filterBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.filterBox > fieldset {
+  border: 2px solid #ffe00c;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.categoryBox {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+}
+
+@media (min-width: 254px) and (max-width: 767px) {
+  .pagination-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+  .filterBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+  .filterBox > fieldset {
+    border: 2px solid #ffe00c;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.categoryBox {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productsHeading {
+  margin: 2vmax auto;
+  width: 40vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 5.5vmax "Roboto";
+  text-align: center;
+}
 }

@@ -69,13 +69,10 @@ const Products = ({ match ,history}) => {
           <MetaData title="PRODUCTS -- Ebazar" />
           <h2 className="productsHeading">Products</h2>
 
-          <div className="products">
-            {products &&
-              products.map((product) => (
-                <ProductCard key={product._id} product={product} />
-              ))}
-          </div>
-
+          {/* <div className="products container">
+            <div className="row"> */}
+            <div className="mydiv">
+            
           <div className="filterBox">
             <Typography>Price</Typography>
             <Slider
@@ -94,7 +91,7 @@ const Products = ({ match ,history}) => {
                   className="category-link"
                   key={category}
                   onClick={() => {
-                    history.push("/products")
+                    history.push("/products");
                     setCategory(category)
                   }}
                 >
@@ -117,6 +114,23 @@ const Products = ({ match ,history}) => {
               />
             </fieldset>
           </div>
+
+
+            <section className="courses-section">
+              <div className="pattern-layer" style={{backgroundImage: 'url(/assets/images/background/pattern-2.png)'}} />
+              {/* <div className="circle-one paroller" data-paroller-factor="-0.20" data-paroller-factor-lg="0.20" data-paroller-type="foreground" data-paroller-direction="horizontal" />
+              <div className="circle-two paroller" data-paroller-factor="0.20" data-paroller-factor-lg="-0.20" data-paroller-type="foreground" data-paroller-direction="horizontal" /> */}
+              <div className="auto-container mx-auto">
+              <div className="row clearfix">
+                {products &&
+                  products.map((product) => (
+                    <ProductCard key={product._id} product={product} />
+                  ))}
+                </div>  
+              </div>
+            </section>
+
+          </div>
           {resultPerPage < count && (
             <div className="paginationBox">
               <Pagination
@@ -128,13 +142,14 @@ const Products = ({ match ,history}) => {
                 prevPageText="Prev"
                 firstPageText="1st"
                 lastPageText="Last"
-                itemClass="page-item"
-                linkClass="page-link"
-                activeClass="pageItemActive"
+                itemClass="paginationitem"
+                linkClass="pagination-link"
+                activeClass="paginationitemActive"
                 activeLinkClass="pageLinkActive"
               />
             </div>
           )}
+        
         </Fragment>
       )}
     </Fragment>

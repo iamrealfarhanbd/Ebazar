@@ -5,7 +5,7 @@
   background-color: white;
   display: grid;
   grid-template-columns: 4fr 4fr;
-  position: fixed;
+  position: inherit;
 }
 
 .aboutSectionGradient {

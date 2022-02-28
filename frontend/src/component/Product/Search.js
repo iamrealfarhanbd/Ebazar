@@ -23,7 +23,8 @@ const Search = ({ history }) => {
           placeholder="Search a Product ..."
           onChange={(e) => setKeyword(e.target.value)}
         />
-        <input type="submit" value="Search" />
+        <input type="submit" value="Search" className="theme-btn btn-style-one"/>
+        
       </form>
     </Fragment>
   );

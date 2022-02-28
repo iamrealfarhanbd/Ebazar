@@ -1,10 +1,10 @@
 import React from "react";
 // import { ReactNavbar } from "overlay-navbar";
 import logo from "../../../images/logo.png";
-import {FaSearch} from 'react-icons/all'
+import {FaSearch,RiLoginBoxFill} from 'react-icons/all'
 import { Link } from 'react-router-dom'
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import { useSelector } from "react-redux";
 // AiOutlineShoppingCart
 // const options = {
@@ -41,19 +41,23 @@ import { useSelector } from "react-redux";
 //   cartIconMargin: "1vmax",
 // };
 
-const Header = ({ user }) => {
+const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
+  const { isAuthenticated } = useSelector((state) => state.user);
+
   // return <ReactNavbar {...options} />;
   return (
     <> 
-      <nav className=" navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className=" navbar navbar-expand-lg bg-nav navbar-light bg-light">
         <div className="container-fluid">
+          <div className="width-50 mx-auto text-center">
           <Link className="navbar-brand" to="/"> <img className="nav-logo" src={logo} alt="Ebazar" />  </Link>
+          </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
-            <ul className="Navbar navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="Navbar nav-ul navbar-nav ms-auto mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">Home</ Link >
               </li>
@@ -73,7 +77,8 @@ const Header = ({ user }) => {
                 <Link className="nav-link" to={"/cart"}><ShoppingCartIcon style={{ color: cartItems.length > 0 ? "tomato" : "unset" }} />{cartItems.length}</ Link >
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/Login"}>Login</ Link >
+                <Link className="nav-link" to={"/Login"}> <AccountBalanceIcon style={{color: isAuthenticated ? "#43b97e" : "unset" }}/> </ Link >
+               
               </li>
              
           
