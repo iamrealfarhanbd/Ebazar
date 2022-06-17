@@ -25,7 +25,6 @@ const About = () => {
             <Button onClick={visitInstagram} color="primary">
               Visit Instagram
             </Button>
-
           </div>
         </div>
             <span className="about-project">
