@@ -27,7 +27,6 @@ const About = () => {
             </Button>
 
           </div>
-
         </div>
             <span className="about-project">
             This is our versity Project Ebazar wesbite made by Farhan Ahmed.
