@@ -27,17 +27,6 @@ const About = () => {
             </Button>
 
           </div>
-          <div className="aboutSectionContainer2 col-md-6">
-          <Avatar
-              style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/ddsstur6v/image/upload/v1644913930/images/WhatsApp_Image_2022-02-13_at_10.14.01_PM_cxm6ls.jpg"
-              alt="Founder"
-            />
-            <Typography>Ashfaq Mahbub Mahi</Typography>
-            <Button onClick={visitInstagram} color="primary">
-              Visit Instagram
-            </Button>
-          </div>
         </div>
             <span className="about-project">
             This is our versity Project Ebazar wesbite made by Farhan And Mahi.
