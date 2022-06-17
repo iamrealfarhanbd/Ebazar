@@ -29,7 +29,7 @@ const About = () => {
           </div>
         </div>
             <span className="about-project">
-            This is our versity Project Ebazar wesbite made by Farhan And Mahi.
+            This is our versity Project Ebazar wesbite made by Farhan Ahmed.
             </span>
             <span className="about-project">
                 Which name is Ebazar
