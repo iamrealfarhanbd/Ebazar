@@ -18,7 +18,7 @@ const About = () => {
           <div className="col-md-6">
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/ddsstur6v/image/upload/v1644755549/images/farhan_vob815.jpg"
+              src="https://res.cloudinary.com/iamfarhan/image/upload/v1644755549/images/farhan_vob815.jpg"
               alt="Founder"
             />
             <Typography>Farhan Ahmed</Typography>
