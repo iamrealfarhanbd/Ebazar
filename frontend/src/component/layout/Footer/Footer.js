@@ -24,7 +24,7 @@ const Footer = () => {
 							</div>
 							<ul className="info-list">
 								<li>Tel:<Link to="tel:+8801787295541"> 017-8729-5541</Link></li>
-								<li>Email:<Link to="info@FarhanMahi.Lu"> info@FarhanMahi.Lu</Link></li>
+								<li>Email:<Link to="iamfarhan09@gmail.com"> iamfarhan09@gmail.com</Link></li>
 							</ul>
 							<ul className="social-box">
 								<li className="twitter"><Link target="_blank" to="http://twitter.com/iamrealfarhanbd" className="fa fa-twitter"></Link ></li>
@@ -76,10 +76,10 @@ const Footer = () => {
 					<div className="col-lg-6 col-lg-6 col-sm-12">
 						<div className="subscribe-form">
 							<h6>Newsletter</h6>
-							<form method="post" action="mailto:info@FarhanMahi.Lu">
+							<form method="post" action="mailto:iamfarhan09@gmail.com">
 								<div className="form-group">
 									{/* <input type="email" name="email" placeholder="iamfarhan" required value="iamfarhan09@gmail.com"/> */}
-                  <li className="input-value">info@FarhanMahi.Lu</li>
+                  <li className="input-value">iamfarhan09@gmail.com</li>
      
 									<button type="submit" className="submit-btn"><span className="icon flaticon-right-arrow-2"></span></button>
 								</div>
