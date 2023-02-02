@@ -27,10 +27,10 @@ const Footer = () => {
 								<li>Email:<Link to="iamfarhan09@gmail.com"> iamfarhan09@gmail.com</Link></li>
 							</ul>
 							<ul className="social-box">
-								<li className="twitter"><Link target="_blank" to="http://twitter.com/iamrealfarhanbd" className="fa fa-twitter"></Link ></li>
-								<li className="pinterest"><Link target="_blank" to="http://pinterest.com/iamrealfarhanbd" className="fa fa-pinterest-p"></Link ></li>
-								<li className="facebook"><Link target="_blank" to="http://facebook.com/iamrealfarhanbd" className="fa fa-facebook-f"></Link ></li>
-								<li className="dribbble"><Link target="_blank" to="http://dribbble.com/iamrealfarhanbd" className="fa fa-dribbble"></Link ></li>
+								<li className="twitter"><Link target="_blank" to="http://www.twitter.com/iamrealfarhanbd" className="fa fa-twitter"></Link ></li>
+								<li className="pinterest"><Link target="_blank" to="http:/www.pinterest.com/iamrealfarhanbd" className="fa fa-pinterest-p"></Link ></li>
+								<li className="facebook"><Link target="_blank" to="http://www.facebook.com/iamrealfarhanbd" className="fa fa-facebook-f"></Link ></li>
+								<li className="dribbble"><Link target="_blank" to="http://www.dribbble.com/iamrealfarhanbd" className="fa fa-dribbble"></Link ></li>
 							</ul>
 							<div className="text">Get started now and take advantage of <br/> our Valentine's day offer Now.</div>
 						</div>
