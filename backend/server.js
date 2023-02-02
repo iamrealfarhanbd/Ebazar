@@ -9,6 +9,13 @@ process.on("uncaughtException", (err) => {
   process.exit(1);
 });
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('frontend/build'));
+  const path = require('path');
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
+  });
+}
 // Config
 if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/config/config.env" });
@@ -26,6 +33,8 @@ cloudinary.config({
 const server = app.listen(process.env.PORT, () => {
   console.log(`Server is working on https://ebazar.onrender.com${process.env.PORT}`);
 });
+
+
 
 // Unhandled Promise Rejection
 process.on("unhandledRejection", (err) => {
